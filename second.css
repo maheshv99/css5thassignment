@@ -1,0 +1,66 @@
+body{
+    background-color: yellow;
+}
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+   
+}
+span:nth-child(2){
+    display: inline-block;
+    background-color:rgb(122, 228, 64);
+    width: 100px;
+    height: 100px;
+    
+}
+#first_row{
+        transition: 2s linear;
+}
+#first_row:hover{
+   width: 300px;
+}
+#second_row{
+    transition: 3s linear;
+}
+#second_row:hover{
+    width: 300px;
+    height: 350px;
+}
+#third_row{
+    transition: 3s linear;
+}
+#third_row:hover{
+    width: 300px;
+}
+#fourth_row{
+    transition: 2s linear;
+}
+#fourth_row:hover{
+    width: 300px;
+}
+#fifth_row{
+    transition: 2s linear;
+}
+#fifth_row:hover{
+    width: 300px;
+}
+#sixth_row{
+    transition: 2s linear;
+}
+#sixth_row:hover{
+    width: 300px;
+}
+#seventh_row{
+    transition: 2s linear;
+  
+}
+#seventh_row:hover{
+    width: 300px;
+}
+center{
+    margin-top: 30px;
+    font-size: larger;
+    font-weight: bolder;
+    line-height: 30px;
+}

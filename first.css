@@ -1,0 +1,124 @@
+body{
+    background-color: yellow;
+    text-align: center;
+}
+.row1{
+    display: grid;
+    grid-template-columns: 20px 110px 110px 130px;
+    align-items:baseline;
+    justify-content: center;
+    grid-column-gap: 50px;
+    grid-row-gap: 70px;
+   
+}
+.first-row{
+    width: 80px;
+    height: 80px;
+   
+    background-color:rgb(81, 137, 145);
+    transform:skew(20deg);
+    animation: alternate first_row infinite 4s;
+    
+}
+@keyframes first_row{
+    0%{
+        transform:skew(20deg);
+    }
+    50%{
+        transform:skew(-20deg);
+    }
+}
+.second-row{
+    width: 80px;
+    height: 80px;
+    
+    background-color:rgb(160, 160, 160);
+    transform:skewY(20deg);
+    animation: alternate second_row infinite 2s 0s;
+    transition-duration: 1s;
+    
+}
+@keyframes second_row{
+    from{
+        transform:skewY(20deg);
+    }
+    to{
+        transform:skewY(-20deg);
+    }
+}
+.third-row{
+    width: 80px;
+    height: 80px;
+    
+    background-color:rgb(74, 126, 133);
+    transform:rotateZ(20deg);
+    animation: third_row infinite 2s 0s;
+    
+}
+@keyframes third_row{
+    from{
+        transform:rotateZ(20deg);
+    }
+    to{
+        transform:rotateZ(360deg);
+    }
+}
+.fourth-row{
+    width: 80px;
+    height: 80px;
+}
+.four1{
+    background-color:rgb(74, 126, 133);
+    animation: four_1 infinite 4s;
+    border: 2px solid black;
+}
+@keyframes four_1{
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%{
+        transform: rotateX(50deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+.four2{
+    background-color:rgb(74, 126, 133);
+    animation: four_2 infinite 4s;
+    border: 2px solid black;
+}
+@keyframes four_2{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(60deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+
+}
+.four3{
+    background-color:rgb(74, 126, 133);
+    animation: four_3 infinite 4s;
+    border: 2px solid black;
+    margin-bottom: 50px;
+}
+@keyframes four_3{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+a{
+    font-size: 20px;
+    font-weight: bolder;
+}
